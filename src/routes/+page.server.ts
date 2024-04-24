@@ -1,4 +1,4 @@
-import { GOOGLE_FONTS_API_KEY } from '$env/static/private'
+import { env } from '$env/dynamic/private'
 import { createServerLoad } from 'svelte-font-select'
 
-export const load = createServerLoad(GOOGLE_FONTS_API_KEY)
+export const load = createServerLoad(env.GOOGLE_FONTS_API_KEY)
