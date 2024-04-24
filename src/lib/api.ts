@@ -1,7 +1,5 @@
 import type { ServerLoad } from '@sveltejs/kit'
 
-type Fetch = typeof fetch
-
 interface GoogleFont {
 	category: string
 	family: string
