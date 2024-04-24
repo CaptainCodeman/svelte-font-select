@@ -48,9 +48,9 @@ jobs:
           static_site_generator: sveltekit
 
       - name: Build
-        run: pnpm run build
-        env: # Or as an environment variable
+        env:
           GOOGLE_FONTS_API_KEY: ${{ secrets.GOOGLE_FONTS_API_KEY }}
+        run: pnpm run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v1
